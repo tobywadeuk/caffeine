@@ -94,6 +94,7 @@ table {
     background-color: var(--col-bg);
     color: var(--col-text);
     width: 100%;
+    text-align: center;
 }
 
 .form {
@@ -106,11 +107,11 @@ table {
 
 button {
     border: none;
-    padding: 15px 32px;
+    padding: 2vh 2.22vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     border: solid var(--col-text) 1px;
     background-color: var(--col-compl);
     border-radius: 8px;
@@ -119,12 +120,12 @@ button {
 
 
 select {
-    padding: 16px 20px;
+    padding: 2.1vh 1.4vw;
     border: none;
     border-radius: 8px;
     border: solid var(--col-text) 1px;
     background-color: var(--col-compl);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 
