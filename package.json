@@ -1,0 +1,19 @@
+{
+  "name": "caffeine",
+  "version": "1.0.0",
+  "description": "andrew huberman's reccomendations on caffeine",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobywadeuk/caffeine.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobywadeuk/caffeine/issues"
+  },
+  "homepage": "https://github.com/tobywadeuk/caffeine#readme"
+}

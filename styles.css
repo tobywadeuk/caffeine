@@ -3,56 +3,136 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
-ol, ul {
-    list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
 
 /* 
  */
@@ -60,133 +140,155 @@ table {
  */
 
 :root {
-    --col-bg: #f2e9e4;
-    --col-compl: #c9ada7;
-    --col-text: #22223b;
+  --col-bg: #f2e9e4;
+  --col-compl: #c9ada7;
+  --col-text: #22223b;
 }
 
-
 .container {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--col-bg);
-    color: var(--col-text);
-    width: 100vw;
-    height: 90vh;
-    padding: 5vh 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-bg);
+  color: var(--col-text);
+  width: 100vw;
+  height: 90vh;
+  padding: 5vh 0;
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--col-bg);
-    color: var(--col-text);
-    margin-top: 10vh;
-    line-height: 2.5;
-    font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--col-bg);
+  color: var(--col-text);
+  margin-top: 5vh;
+  line-height: 2.5;
+  font-size: 1.5rem;
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--col-bg);
-    color: var(--col-text);
-    width: 100%;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 40vh;
+  width: 100%;
+
+  background-color: var(--col-bg);
+  color: var(--col-text);
+
+  /* border: solid 1px var(--col-compl);     */
+}
+
+.introone,
+.introtwo,
+.introthree {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+  text-align: center;
+  line-height: 1.5;
+  border-bottom: solid 1px var(--col-compl);
+}
+
+.introtwo:hover,
+.introthree:hover {
+  text-decoration: underline;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
 
 button {
-    border: none;
-    padding: 2vh 2.22vw;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-    border: solid var(--col-text) 1px;
-    background-color: var(--col-compl);
-    border-radius: 8px;
-
+  border: none;
+  padding: 2vh 2.22vw;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border: solid var(--col-text) 1px;
+  background-color: var(--col-compl);
+  border-radius: 8px;
 }
-
 
 select {
-    padding: 2.1vh 1.4vw;
-    border: none;
-    border-radius: 8px;
-    border: solid var(--col-text) 1px;
-    background-color: var(--col-compl);
-    font-size: 1rem;
+  padding: 2.1vh 1.4vw;
+  border: none;
+  border-radius: 8px;
+  border: solid var(--col-text) 1px;
+  background-color: var(--col-compl);
+  font-size: 1rem;
 }
 
-
 .form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .rowone {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
-.formone, .formtwo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 5vw;
+.formone,
+.formtwo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5vw;
 }
 
 label {
-    font-size: 1.25rem;
-    margin: 2vh 0;
+  font-size: 1.25rem;
+  margin: 2vh 0;
 }
 
-
 .intro {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
 
-a, a:visited, a:hover, a:active {
-    color: inherit;
-}
-
-.huberman {
-    font-size: 1.5rem;
-    padding-bottom: 2.5vh;
-}
-
-.hiya {
-    border-bottom: solid var(--col-compl) 1px;
-    width: 50vw;
+.line {
+  border-bottom: solid var(--col-compl) 1px;
+  width: 50vw;
 }
 
 .short {
-    width: 35vw;
+  width: 35vw;
 }
 
 .low {
-    padding-top: 5vh;
+  padding-top: 5vh;
 }
 
-button:hover, select:hover {
-    background-color: var(--col-bg);
+button:hover,
+select:hover {
+  background-color: var(--col-bg);
+}
+
+.title {
+  font-size: 1.7rem;
+}
+
+.huberman {
+  font-size: 1.5rem;
+}
+
+.italics {
+  font-style: italic;
 }
