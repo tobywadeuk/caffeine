@@ -143,6 +143,7 @@ table {
   --col-bg: #f2e9e4;
   --col-compl: #c9ada7;
   --col-text: #22223b;
+  font-size: 16px;
 }
 
 .container {
@@ -164,6 +165,8 @@ table {
   margin-top: 5vh;
   line-height: 2.5;
   font-size: 1.5rem;
+  text-align: center;
+  margin: 0 20vw;
 }
 
 .intro {
@@ -172,7 +175,7 @@ table {
   align-items: center;
   justify-content: space-evenly;
 
-  height: 40vh;
+  /* height: 40vh; */
   width: 100%;
 
   background-color: var(--col-bg);
@@ -212,13 +215,13 @@ button {
   font-size: 1rem;
   border: solid var(--col-text) 1px;
   background-color: var(--col-compl);
-  border-radius: 8px;
+  border-radius: 0.5vw;
 }
 
 select {
   padding: 2.1vh 1.4vw;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5vw;
   border: solid var(--col-text) 1px;
   background-color: var(--col-compl);
   font-size: 1rem;
@@ -241,6 +244,9 @@ select {
   align-items: center;
   justify-content: center;
   margin: 0 5vw;
+  text-align: center;
+
+  line-height: 1.3;
 }
 
 label {
@@ -291,4 +297,61 @@ select:hover {
 
 .italics {
   font-style: italic;
+}
+
+.madeby {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+
+  padding: 0.8vh 0.4vw;
+  background: #fbf9ff;
+  border: solid 1px #656565;
+  border-bottom: none;
+  border-right: none;
+
+  vertical-align: middle;
+}
+
+.madeby p {
+  /* display: inline; */
+  line-height: 1.625;
+  letter-spacing: 0.025em;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #656565;
+
+  display: inline;
+  margin-left: 0.5vw;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.logoimg {
+  height: auto;
+  width: 1.5vw;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 1.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    font-size: 14px;
+  }
+  .logoimg {
+    width: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  :root {
+    font-size: 10px;
+  }
 }
